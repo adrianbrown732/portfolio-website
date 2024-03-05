@@ -1,3 +1,9 @@
+/* Colors
+#333
+#efefef
+#ce643b
+--------------------------- */
+
 /* Global
 --------------------------- */
 html {
@@ -11,7 +17,7 @@ html {
 }
 
 body {
-  /* padding: 0 15px; */
+    background: #333;
   margin: 0 auto;
   font-family: "Schibsted Grotesk";
 }
@@ -58,21 +64,25 @@ header h1 {
 nav {
   padding: 0;
   margin: 0;
+  font-size: .7em;
+  font-weight: 600;
 }
 
 nav ul {
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
   padding: 0;
 }
 
 nav li {
-  padding: 10px 8px;
-  background: gray;
+  padding: 10px 15px;
+  background: #333;
   border-radius: 25px;
   flex: 0;
-  font-weight: 600;
-  font-size: 0.85em;
+}
+
+.active {
+    background: #ce643b;
 }
 
 .thin-letters {
@@ -111,19 +121,20 @@ section iframe {
   border-radius: 10px;
 }
 
+
+h2 {
+    text-transform: lowercase;
+    font-weight: 400;
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #efefef;
+}
+
 .advertisements div,
 .documentary div,
 .motion-graphics div {
   margin-bottom: 10px;
 }
-
-h2 {
-  text-transform: lowercase;
-  font-weight: 400;
-  margin: 15px 0;
-  font-size: 1.5em;
-}
-
 /* ABOUT *********************/
 main img {
   width: 100%;
