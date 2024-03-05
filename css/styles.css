@@ -125,8 +125,8 @@ section iframe {
 h2 {
     text-transform: lowercase;
     font-weight: 400;
-    margin: 15px 0;
-    font-size: 1.5em;
+    margin: 25px 0;
+    font-size: 1.25em;
     color: #efefef;
 }
 
@@ -145,9 +145,11 @@ main img {
   margin: 0;
   text-transform: none;
   font-size: 2.5em;
+  color: #efefef;
 }
 
 .about p {
   margin: 0 0 15px 0;
   line-height: 1.25em;
+  color: #efefef;
 }
