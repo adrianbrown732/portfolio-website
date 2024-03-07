@@ -120,7 +120,7 @@ footer a {
 h2 {
   text-transform: lowercase;
   font-weight: 400;
-  margin: 25px 0;
+  margin: 30px 0 10px 0;
   font-size: 1.5em;
   color: #efefef;
 }
@@ -141,16 +141,24 @@ section iframe {
   margin-bottom: 10px;
 }
 
+.section-line {
+  display: inline-block;
+  background: #efefef;
+  height: 1px;
+  width: 70%;
+  margin-left: 15px;
+}
+
 /* ABOUT *********************/
 main img {
   width: 100%;
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   filter: drop-shadow(rgba(34, 34, 34, 0.75) 0.125rem 0.125rem 2.5px);
 }
 
 .about h2 {
-  margin: 0 0 10px 0;
+  margin: 0 0 2px 0;
   text-transform: none;
   font-size: 2em;
   color: #efefef;
@@ -163,8 +171,18 @@ main img {
   font-size: 0.85em;
 }
 
+.flex-bio {
+  margin: 10px 0 70px 0;
+}
+
 /* Responsive *********************/
 /* MAIN *********************/
+@media (min-width: 514px) {
+  .flex-bio {
+    margin: 10px 0 0 0;
+  }
+}
+
 @media (min-width: 692px) {
   main {
     max-width: 670px;
@@ -175,7 +193,7 @@ main img {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 1.25em 0;
+    gap: 0 0 1.25em 0;
     margin: 0 auto;
   }
 
@@ -186,6 +204,7 @@ main img {
 
   section h2 {
     width: 100%;
+    margin: 30px 0 10px 0;
   }
 
   .container-iframe {
@@ -203,6 +222,11 @@ main img {
   .flex-portrait {
     margin: 0 auto;
     width: 70%;
+  }
+
+  .flex-bio {
+    width: 70%;
+    margin: 0 auto;
   }
 
   .flex-bio:last-child {
