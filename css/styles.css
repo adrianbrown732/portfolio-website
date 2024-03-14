@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/orh5kkr.css");
 /* Colors
 #333
 #efefef
@@ -7,10 +8,10 @@
 /* Global
 --------------------------- */
 html {
-  --ratio: 360/640;
-  --main-text: #efefef;
-  --bg-color: #333;
   --accent-color: #ce643b;
+  --bg-color: #333;
+  --main-text: #efefef;
+  --ratio: 360/640;
 
   box-sizing: border-box;
   font-size: 16px;
@@ -24,13 +25,13 @@ html {
 
 body {
   background: var(--bg-color);
+  font-family: "brandon-grotesque", sans-serif;
   margin: 0 auto;
-  font-family: "Schibsted Grotesk", sans-serif;
 }
 
 h1,
 h2 {
-  font-family: "Libre Bodoni", serif;
+  font-family: linotype-didot, serif;
 }
 
 nav ul {
@@ -38,29 +39,24 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
   color: var(--main-text);
-}
-
-.main-font {
-  font-family: "bodoni-pt-variable", sans-serif;
-  font-variation-settings: "opsz" 10, "wght" 400;
+  text-decoration: none;
 }
 
 /* Header
 --------------------------- */
 header {
-  display: flex;
-  position: sticky;
-  width: 100%;
-  top: 0;
-  z-index: 5;
-  gap: 5px;
-  justify-content: space-between;
   align-items: center;
-  height: 85px;
-  padding: 0 15px;
   background: black;
+  display: flex;
+  gap: 5px;
+  height: 75px;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 header h1 {
@@ -70,14 +66,16 @@ header h1 {
   flex: 1;
   font-weight: 700;
   color: var(--main-text);
-  word-spacing: 2px;
+  /* letter-spacing: 1.5px; */
+  word-spacing: -2px;
 }
 
 nav {
   padding: 0;
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -86,11 +84,14 @@ nav ul {
   padding: 0;
 }
 
-nav li {
+nav a {
   padding: 10px 15px;
   background: var(--bg-color);
   border-radius: 25px;
-  flex: 0;
+}
+
+nav a:hover {
+  color: red;
 }
 
 .thin-letters {
@@ -132,8 +133,9 @@ main.home h2 {
   margin: 20px 0;
   text-transform: lowercase;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.5rem;
+  letter-spacing: 2px;
   color: var(--main-text);
 }
 
@@ -164,7 +166,7 @@ main.about {
 
 main.about h2 {
   margin: 0 0 2px 0;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
   color: var(--main-text);
 }
@@ -180,9 +182,9 @@ main.about img {
 
 .about p {
   margin: 0 0 18px 0;
-  line-height: 20px;
+  line-height: 30px;
   color: var(--main-text);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .bio:last-child {
