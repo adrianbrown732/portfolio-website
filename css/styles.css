@@ -8,10 +8,14 @@
 /* Global
 --------------------------- */
 html {
-  --accent-color: #ce643b;
+  --main-color: #ce643b;
   --bg-color: #333;
   --main-text: #efefef;
-  --ratio: 360/640;
+  --ratio: 9/16;
+  --hor-padding: 25px;
+  --sib-spacing: 10px;
+  --new-section: 25px;
+  --footer: 75px;
 
   box-sizing: border-box;
   font-size: 16px;
@@ -34,10 +38,6 @@ h2 {
   font-family: linotype-didot, serif;
 }
 
-nav ul {
-  list-style-type: none;
-}
-
 nav a {
   color: var(--main-text);
   text-decoration: none;
@@ -46,25 +46,18 @@ nav a {
 /* Header
 --------------------------- */
 header {
-  align-items: center;
   background: black;
-  display: flex;
-  gap: 5px;
-  height: 75px;
-  justify-content: space-between;
-  padding: 0 15px;
+  padding: var(--hor-padding) 0;
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 5;
 }
 
 header h1 {
-  margin: 0;
+  margin: var(--sib-spacing) 0;
   font-size: 1.5rem;
   text-transform: lowercase;
   text-align: center;
-  flex: 1;
   font-weight: 700;
   color: var(--main-text);
   word-spacing: -2px;
@@ -73,27 +66,31 @@ header h1 {
 nav {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  width: 200px;
+  margin: 0 auto;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1px;
+  border: 1px solid coral;
 }
 
-nav a {
-  padding: 10px 15px;
-  background: transparent;
+nav > div {
+  display: flex;
+  flex: 1;
+}
+
+nav div:last-child {
+  justify-content: flex-end;
+}
+
+div a {
+  padding: 0 20px;
+  border: 1px solid rebeccapurple;
 }
 
 .thin-letters {
   font-weight: 400;
 }
-
-/* .active {
-  background: var(--accent-color);
-} */
 
 /* Footer
 --------------------------- */
@@ -119,31 +116,26 @@ footer a {
 
 /* HOME *********************/
 main.home {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--new-section);
+  border: 1px solid red;
+  /* width: 80%; */
   margin: 0 auto;
-}
-
-main.home h2 {
-  margin: 20px 0;
-  text-transform: lowercase;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  color: var(--main-text);
+  /* padding: 0 var(--glb-padding); */
+  /* gap: 5px; */
+  /* padding: 5px; */
+  /* margin: 0 15px; */
+  /* margin: 0 auto; */
+  /* padding: 15px; */
 }
 
 iframe {
   filter: drop-shadow(rgba(34, 34, 34, 0.75) 0.125rem 0.125rem 2.5px);
 }
 
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
 .video-sizing {
-  width: 100vw;
+  width: 100%;
   height: calc(100vw * var(--ratio));
 }
 
@@ -203,7 +195,7 @@ main.about img {
 }
 
 /* HOME *********************/
-@media (min-width: 692px) {
+/* @media (min-width: 692px) {
   main.home {
     max-width: 600px;
     padding: 0;
@@ -235,4 +227,4 @@ main.about img {
     height: calc(100vw * var(--ratio));
     max-height: calc(var(--container-width) * var(--ratio));
   }
-}
+} */
