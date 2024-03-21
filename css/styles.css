@@ -9,13 +9,13 @@
 --------------------------- */
 html {
   --main-color: #ce643b;
-  --bg-color: #333;
+  --bg-color: #000000;
   --main-text: #efefef;
   --ratio: 9/16;
+  --main-padding: 15px;
   --hor-padding: 25px;
   --sib-spacing: 10px;
   --new-section: 25px;
-  --footer: 75px;
 
   box-sizing: border-box;
   font-size: 16px;
@@ -46,7 +46,7 @@ nav a {
 /* Header
 --------------------------- */
 header {
-  background: black;
+  background: var(--bg-color);
   padding: var(--hor-padding) 0;
   position: sticky;
   top: 0;
@@ -71,7 +71,7 @@ nav {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1px;
-  border: 1px solid coral;
+  /* border: 1px solid coral; */
 }
 
 nav > div {
@@ -85,7 +85,7 @@ nav div:last-child {
 
 div a {
   padding: 0 20px;
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
 }
 
 .thin-letters {
@@ -118,20 +118,13 @@ footer a {
 main.home {
   display: flex;
   flex-wrap: wrap;
-  margin-top: var(--new-section);
-  border: 1px solid red;
-  /* width: 80%; */
-  margin: 0 auto;
-  /* padding: 0 var(--glb-padding); */
-  /* gap: 5px; */
-  /* padding: 5px; */
-  /* margin: 0 15px; */
-  /* margin: 0 auto; */
-  /* padding: 15px; */
+  padding: 0 var(--main-padding);
+  /* border: 1px solid red; */
 }
 
 iframe {
   filter: drop-shadow(rgba(34, 34, 34, 0.75) 0.125rem 0.125rem 2.5px);
+  /* border: 1px solid yellow; */
 }
 
 .video-sizing {
