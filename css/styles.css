@@ -158,7 +158,7 @@ main.about img {
 
 .about p {
   margin: 0 0 18px 0;
-  line-height: 2em;
+  line-height: 1.5em;
   color: var(--main-text);
   font-size: 1.5rem;
 }
