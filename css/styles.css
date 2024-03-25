@@ -19,7 +19,7 @@ html {
   --new-section: 25px;
   --container-width: 950px;
   --sml-container: 575px;
-  --push-footer: auto;
+  --push-footer: 100%;
 
   box-sizing: border-box;
   font-size: 16px;
@@ -112,7 +112,7 @@ footer {
 }
 
 footer p {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   color: var(--main-text);
 }
 
@@ -158,13 +158,17 @@ main.about img {
 
 .about p {
   margin: 0 0 18px 0;
-  line-height: 1.5em;
+  line-height: 2em;
   color: var(--main-text);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.about p:first-child {
+  margin-bottom: calc(var(--sib-spacing) * 3);
 }
 
 .bio p:last-child {
-  margin-bottom: var(--new-section);
+  margin-bottom: var(--push-footer);
 }
 
 /* Responsive *********************/
