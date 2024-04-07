@@ -51,6 +51,9 @@ nav a {
 header {
   background: var(--bg-color);
   padding: var(--hor-padding) 0;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 header h1 {
