@@ -51,9 +51,6 @@ nav a {
 header {
   background: var(--bg-color);
   padding: var(--hor-padding) 0;
-  position: sticky;
-  top: 0;
-  z-index: 5;
 }
 
 header h1 {
@@ -83,15 +80,10 @@ nav > div {
 
 nav a {
   display: flex;
-  width: 25px;
   justify-content: center;
+  padding: 0 var(--main-padding);
   align-items: center;
   color: var(--main-text);
-}
-
-.work a,
-.about a {
-  padding: 0 25px;
 }
 
 .active a {
@@ -123,6 +115,21 @@ main.home {
   margin: 0 auto;
   padding: 0 var(--main-padding);
   max-width: var(--container-width);
+}
+
+.home-bio {
+  margin: var(--new-section) 0;
+  margin-bottom: calc(var(--new-section) * 2);
+  color: var(--main-text);
+  font-size: 1.75rem;
+  line-height: 1.25em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.cta {
+  color: var(--main-color);
+  text-decoration: none;
 }
 
 .video-sizing {
