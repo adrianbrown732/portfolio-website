@@ -4,5 +4,5 @@ const bgOverlay = document.querySelector(".bg-overlay");
 
 hamMenuButton.addEventListener("click", () => {
   hamMenuPopout.classList.toggle("hide");
-  bgOverlay.classList.toggle("mbl-overlay");
+  //   bgOverlay.classList.toggle("mbl-overlay");
 });
