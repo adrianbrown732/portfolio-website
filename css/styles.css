@@ -17,6 +17,8 @@ body {
   --mbl-header: 75px;
   --mbl-footer: calc(var(--mbl-header) / 2.5);
   --mbl-margin: 1em;
+  --popout-width: 280px;
+  --popout-height: 525px;
 }
 
 ul {
@@ -48,7 +50,6 @@ header {
 }
 
 .ham-menu span {
-  /* display: block; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,8 +67,33 @@ header {
   top: 100%;
 }
 
+.hide {
+  opacity: 0;
+}
+
 .ham-menu-popout {
-  display: none;
+  position: fixed;
+  z-index: 3;
+  right: 0;
+  width: var(--popout-width);
+  height: var(--popout-height);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: var(--header-text);
+  color: var(--main-color);
+}
+
+.mbl-overlay {
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+  opacity: 0.8;
 }
 
 .mbl-gallery img {
