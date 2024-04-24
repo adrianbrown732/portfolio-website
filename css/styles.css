@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #151414;
+  --header-text: #fff;
+  --mbl-margin: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--mbl-margin);
+  background-color: var(--main-color);
+  color: var(--header-text);
+}
+
+.ham-menu {
+  position: relative;
+  width: 35px;
+  height: 20px;
+}
+
+.ham-menu span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  background-color: var(--header-text);
+  width: 100%;
+  height: 4px;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 0;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 100%;
+}
