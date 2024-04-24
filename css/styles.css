@@ -103,6 +103,10 @@ header {
   transition: translate 400ms ease-in-out;
 }
 
+.show-menu {
+  translate: 0;
+}
+
 .mbl-overlay {
   position: fixed;
   z-index: 2;
@@ -111,11 +115,11 @@ header {
   background-color: var(--main-color);
   opacity: 0;
 
-  transition: opacity 1s;
+  transition: opacity 400ms;
 }
 
-.hide {
-  translate: 0;
+.show-overlay {
+  opacity: 0.8;
 }
 
 /* Main ***********************/
