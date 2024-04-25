@@ -9,7 +9,7 @@
 body {
   color: var(--header-text);
   background-color: var(--main-color);
-  font-family: presti-display, serif;
+  font-family: libre-bodoni, sans-serif;
 }
 
 :root {
@@ -17,7 +17,7 @@ body {
   --header-text: #fff;
   --mbl-header: 75px;
   --mbl-footer: calc(var(--mbl-header) / 2.5);
-  --mbl-margin: 1em;
+  --mbl-margin: 16px;
   --popout-width: 280px;
   --popout-height: 525px;
 }
@@ -30,7 +30,7 @@ a {
   text-decoration: none;
   color: var(--main-color);
   text-transform: lowercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.25rem;
 }
 
@@ -108,6 +108,10 @@ button.ham-menu {
   transition: translate 400ms ease-in-out;
 }
 
+.ham-menu-popout li {
+  padding-block: 1.5em;
+}
+
 .show-menu {
   translate: 0;
 }
@@ -127,7 +131,7 @@ button.ham-menu {
   opacity: 0.8;
 }
 
-/* Main ***********************/
+/* Home ***********************/
 .mbl-gallery img {
   display: block;
   width: 100%;
@@ -138,11 +142,43 @@ button.ham-menu {
   height: 261px;
 } */
 
+/* About ***********************/
+.about-page {
+  background: var(--header-text);
+  color: var(--main-color);
+  /* padding-inline: 1em; */
+  padding-bottom: 2em;
+}
+
+.about-page h1 {
+  text-transform: lowercase;
+  font-weight: 500;
+  padding-block: 0.75em;
+  margin-inline: var(--mbl-margin);
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+}
+
+.about-page p {
+  font-family: "inter-variable", sans-serif;
+  font-variation-settings: "wght" 300, "slnt" 0;
+  font-size: 1rem;
+  text-align: justify;
+  margin-inline: var(--mbl-margin);
+  padding-block: 1em;
+}
+
 /* Footer ***********************/
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.6rem;
   height: var(--mbl-footer);
+
+  font-family: "inter-variable", sans-serif;
+  font-variation-settings: "wght" 300, "slnt" 0;
+  font-size: 0.6rem;
 }

@@ -3,30 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/fbc1jyy.css" />
+
+    <script type="module" src="script.js" defer></script>
 
     <title>About</title>
   </head>
 
   <body>
-    <header>
-      <h1>Adrian Brown <span class="thin-letters">Creative</span></h1>
-
-      <nav>
-        <div class="work"><a href="./index.html">Work</a></div>
-
-        <div class="active">
-          <a href="mailto: adrianbrown.editor@gmail.com">Contact</a>
-        </div>
-
-        <div class="about"><a href="./about.html">About</a></div>
-      </nav>
+    <header class="mbl-header">
+      <h1>Adrian Brown</h1>
+      <button class="ham-menu">
+        <svg viewBox="0 0 100 100" width="45" height="35">
+          <rect class="line top" width="90" height="13" x="5" y="15" />
+          <rect class="line middle" width="90" height="13" x="5" y="45" />
+          <rect class="line bottom" width="90%" height="13" x="5" y="75" />
+        </svg>
+      </button>
     </header>
 
-    <main class="about">
-      <h2>Hello!</h2>
+    <nav>
+      <ul class="ham-menu-popout">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="about-page">
+      <div class="mbl-overlay"></div>
+      <h1>About</h1>
       <div class="portrait">
-        <img src="img/headshot.jpg" alt="Adrian Brown portrait" />
+        <img src="/img/headshot-mobile.jpg" alt="Adrian Brown" />
       </div>
       <div class="bio">
         <p>
@@ -48,8 +59,6 @@
       </div>
     </main>
 
-    <footer>
-      <p>Copyright Adrian Brown Creative 2024</p>
-    </footer>
+    <footer>Adrian Brown Creative &copy;</footer>
   </body>
 </html>
