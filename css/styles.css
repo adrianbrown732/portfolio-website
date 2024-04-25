@@ -66,6 +66,28 @@ button.ham-menu {
   fill: var(--header-text);
 }
 
+.line {
+  transition: y 300ms ease-out 300ms, rotate 300ms, opacity 0ms 300ms;
+  transform-origin: center;
+}
+
+.move-lines :is(.top, .middle, .bottom) {
+  y: 45;
+  transition: y 300ms ease-out, rotate 300ms ease-out 300ms, opacity 0ms 300ms;
+}
+
+.move-lines .top {
+  rotate: 45deg;
+}
+
+.move-lines .bottom {
+  rotate: -45deg;
+}
+
+.move-lines .middle {
+  opacity: 0;
+}
+
 /* Menu popout */
 .ham-menu-popout {
   position: fixed;
